@@ -1,0 +1,53 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 1rem;
+   margin-inline: 1rem;
+}
+#app{
+    overflow: scroll;
+}
+
+
+#app img{
+   height: 320px;
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 10px; 
+   cursor: pointer;
+
+}
+div.fav{
+    background-color: greenyellow;
+    border-radius: 20px;
+    border-color: green;
+    }
+.btn button{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2em;
+    border: solid 3px green;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.btn button span{
+color: green;
+}
+
+.btn button:hover{
+  background-color: green;
+  transition: ease-in .2s ;
+  cursor: pointer;
+}
+
+.btn button:hover span{
+  color: white;
+}
+

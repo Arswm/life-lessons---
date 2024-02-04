@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue App</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+  
+      <div class="container" v-if="showBooks">
+        
+          <div v-for="book in books" :class="{ fav: book.isFav }" >
+            <img :src="book.img" :alt="book.title" />
+            <h3>{{ book.title }}</h3>
+            <p>{{ book.author }}</p>
+            <button @click="isFav(book)">
+              {{ book.isFav ? 'Remove from favorites' : 'Add to favorites' }}
+            </button>
+            </button>
+          </li>
+        
+      </div>
+
+
+      
+    </div>
+    <div class="btn">
+      <div class="btn">
+        <button @click="showBook">
+          <span v-if="showBooks"> hide books </span>
+          <span v-else> Show books lorem2000</span>
+        </button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
